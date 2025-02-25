@@ -38,8 +38,35 @@
                 <option value="sim">Sim</option>
                 <option value="Não"selected>Não</option>
             </select>
+            <!-- 8 Multiplas opçoes -->
+             <div>
+                <label for="items">Selecione os itens desejados:</label>
+                <select name="items" multiple >
+                    <option value="Pera">Pera</option>
+                    <option value="feijao">Feijão</option>
+                    <option value="arroz">Arroz</option>
+                </select>
+             </div>
             
          </div>
+         <!-- 9 textarea-->
+          <div>
+            <label for="comentario">Escreva abaixo o que você achou do post:</label>
+            <textarea name="comentario"></textarea>
+
+          </div>
+
+        <!-- 10 fieldset e legend   -->
+         <div>
+            <fieldset>
+                <legend>preencha as suas informçôes:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname">
+            </fieldset>
+         </div>
+         <!-- 10 datalist -->
          <!--5 envio de form-->
          <input type="submit" value="Enviar">
     </form>
