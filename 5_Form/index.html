@@ -66,7 +66,58 @@
                 <input type="text" name="lastname">
             </fieldset>
          </div>
-         <!-- 10 datalist -->
+         <!-- 11 datalist -->
+          <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="Cereja"></option>
+                <option value="Morango"></option>
+                <option value="Uva"></option>
+                <option value="Chocolate"></option>
+
+            </datalist>
+          </div>
+          <!-- 12 Senha -->
+           <div>
+            <label for="password">Digite sua senha:</label>
+            <input type="password" name="password">
+           </div>
+           <!--14 - radio button-->
+           <div>
+            <label for="car_model">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">Bmw</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="Mercedes" name="car_model">
+                <label for="Mercedes">Mercedes</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="Civic" name="car_model">
+                <label for="Civic">Civic</label>
+            </div>
+           </div>
+           <!-- 15 checkbox-->
+            <div>
+                <label for="optinals">Opcionais do carro:</label>
+                <div class="radio">
+                    <input type="checkbox" name="optinals[]" value="big_tires">
+                    <label for="big_tires">Pneus Grandes</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="optinals[]" value="big_tires">
+                    <label for="turbo_engine">Motor Turbo</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="optinals[]" value="big_tires">
+                    <label for="hybrido">Hibrido</label>
+                </div>
+            </div>
+           <!-- 13 resertar form-->
+            <input type="reset" value="limpar">
          <!--5 envio de form-->
          <input type="submit" value="Enviar">
     </form>
